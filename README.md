@@ -112,9 +112,9 @@ Click on "Next" to proceed to the next step which will take you to the ```Databa
 * Password: *The joomla password read from the logs.*
 * Database Name: **joomla**
 
-Click on "Next" to proceed to the next step which will take you to the ```Overview" tab```. Select your preferred sample data and review the configuration set. Once reviewed you can complete the configuration by clicking on ëInstallí. On completion of installation you are requested to remove the installation folder by clicking ìRemove installation folderî, this is a security feature and without this you are not able to proceed further.
+Click on "**Next**" to proceed to the next step which will take you to the ```Overview``` tab. Select your preferred sample data and review the configuration set. Once reviewed you can complete the configuration by clicking on ‚Äò**Install**‚Äô. On completion of installation you are requested to remove the installation folder by clicking ‚Äú**Remove installation folder**‚Äù, this is a security feature and without this you are not able to proceed further.
 
-Next click on ìSiteî or ìAdministratorî to redirect you to the newly created Joomla content management system.
+Next click on ‚Äú**Site**‚Äù or ‚Äú**Administrator**‚Äù to redirect you to the newly created Joomla content management system.
 
 
 ### Getting Started
