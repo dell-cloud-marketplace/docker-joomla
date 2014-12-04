@@ -80,13 +80,7 @@ Next, test the **admin** user connection to MySQL:
 
 ```no-highlight
 mysql -uadmin -pca1w7dUhnIgI -h127.0.0.1 -P3306
-```     
-
-
-In this case, **ca1w7dUhnIgI** is the password allocated to the admin user. Make a secure note of this value. You can use it later, to connect to MySQL (e.g. to backup data):
-
-    mysql -u admin -pca1w7dUhnIgI -h127.0.0.1 -P3306
-
+```
 
 ## Complete the Installation
 
