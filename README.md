@@ -104,7 +104,7 @@ You should see Joomla configuration wizard set to the ```Configuration``` tab, s
 * Admin Password
 * Site Offline
 
-Click on "Next" to proceed to the next step which will take you to the ```Database Configuration``` tab. And supply the MySQL information:
+Click on "**Next**" to proceed to the next step which will take you to the ```Database Configuration``` tab. And supply the MySQL information:
 
 * Database Type: **MySQL**
 * Hostname: **localhost**
