@@ -77,7 +77,7 @@ MySQL user: joomla and password: Me2rae1jiefi
 ========================================================================
 ```
 
-Make a secure note of the passwords:
+Make a secure note of:
 
 * The admin user password (in this case **ca1w7dUhnIgI**)
 * The joomla user password (in this case **Me2rae1jiefi**)
@@ -89,7 +89,6 @@ mysql -uadmin -pca1w7dUhnIgI -h127.0.0.1 -P3306
 ```
 
 ## Complete the Installation
-
 Open a web browser and navigate to either the public DNS or IP address of your instance. For example, if the IP address is 54.75.168.125, do:
 
 ```no-highlight
@@ -98,7 +97,7 @@ https://54.75.168.125
 
 Your browser will warn you that the certificate is not trusted. If you are unclear about how to proceed, please consult your browser's documentation on how to accept the certificate.
 
-You should see Joomla configuration wizard set to the **Configuration** tab, select your language and supply the requested information for the following fields:
+You should see Joomla configuration wizard set to the **Configuration** tab. Select your language and supply the requested information for the following fields:
 
 * Site Name
 * Admin Email
@@ -106,31 +105,27 @@ You should see Joomla configuration wizard set to the **Configuration** tab, sel
 * Admin Password
 * Site Offline
 
-Click on **Next** to proceed to the next step which will take you to the **Database Configuration** tab. And supply the MySQL information:
+Click on **Next** to proceed to the **Database Configuration** tab. Supply the MySQL information:
 
 * Database Type: **MySQL**
 * Hostname: **localhost**
 * Username: **joomla**
 * Password: *The joomla password read from the logs.*
 * Database Name: **joomla**
-* Database prefix : **Choose a table prefix or use the randomly generated**
+* Database prefix : **Choose a table prefix or accept the randomly generated value**
 * Old Database Process : **Backup/Remove**. You may want to keep any existing backup tables from former Joomla! installations
 
-Click on **Next** to proceed to the next step which will take you to the **Overview** tab. Select your preferred sample data and review the configuration set. Once reviewed you can complete the configuration by clicking on ‘**Install**’. On completion of installation you are requested to remove the installation folder by clicking **Remove installation folder**, this is a security feature and without this you are not able to proceed further.
+Click on **Next** to proceed to the **Overview** tab. Select your preferred sample data and review the configuration set. Once reviewed, you can complete the configuration by clicking on **Install**. On completion, you are requested to remove the installation folder by clicking **Remove installation folder** (this is a security feature and without this you are not able to proceed further).
 
-Next click on **Site** or **Administrator** to redirect you to the newly created Joomla content management system.
-
+Next, click on **Site** or **Administrator** to access the newly-created Joomla site.
 
 ### Getting Started
-
-To start customising  Joomla, below are a few URLs as a starting guide:
+If you need assistance in customizing Joomla, the following links might be helpful:
 
 * [Joomla Documentation](http://docs.joomla.org/Main_Page)
 * [Getting Started with Joomla](http://docs.joomla.org/Getting_Started_with_Joomla!)
 * [Joomla Extensions Directory](http://extensions.joomla.org/)
 * [Joomla API](http://api.joomla.org/)
 
-
 ### Image Details
-
-Pre-built Image   | [https://registry.hub.docker.com/u/dell/joomla](https://registry.hub.docker.com/u/dell/joomla)
+Pre-built Image | [https://registry.hub.docker.com/u/dell/joomla](https://registry.hub.docker.com/u/dell/joomla)
