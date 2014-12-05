@@ -99,7 +99,7 @@ https://54.75.168.125
 
 Your browser will warn you that the certificate is not trusted. If you are unclear about how to proceed, please consult your browser's documentation on how to accept the certificate.
 
-You should see Joomla configuration wizard set to the ***Configuration*** tab, select your language and supply the requested information for the following fields:
+You should see Joomla configuration wizard set to the **Configuration** tab, select your language and supply the requested information for the following fields:
 
 * Site Name
 * Admin Email
@@ -107,7 +107,7 @@ You should see Joomla configuration wizard set to the ***Configuration*** tab, s
 * Admin Password
 * Site Offline
 
-Click on "**Next** to proceed to the next step which will take you to the ***Database Configuration*** tab. And supply the MySQL information:
+Click on **Next** to proceed to the next step which will take you to the **Database Configuration** tab. And supply the MySQL information:
 
 * Database Type: **MySQL**
 * Hostname: **localhost**
@@ -117,7 +117,7 @@ Click on "**Next** to proceed to the next step which will take you to the ***Dat
 * Database prefix : **Choose a table prefix or use the randomly generated**
 * Old Database Process : **Backup/Remove**. You may want to keep any existing backup tables from former Joomla! installations
 
-Click on **Next** to proceed to the next step which will take you to the ***Overview*** tab. Select your preferred sample data and review the configuration set. Once reviewed you can complete the configuration by clicking on ‘**Install**’. On completion of installation you are requested to remove the installation folder by clicking **Remove installation folder**, this is a security feature and without this you are not able to proceed further.
+Click on **Next** to proceed to the next step which will take you to the **Overview** tab. Select your preferred sample data and review the configuration set. Once reviewed you can complete the configuration by clicking on ‘**Install**’. On completion of installation you are requested to remove the installation folder by clicking **Remove installation folder**, this is a security feature and without this you are not able to proceed further.
 
 Next click on **Site** or **Administrator** to redirect you to the newly created Joomla content management system.
 
