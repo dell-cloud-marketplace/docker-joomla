@@ -61,19 +61,18 @@ sudo docker logs joomla
 You will see output like the following:
 
 ```no-highlight
-====================================================================
+========================================================================
 You can now connect to this MySQL Server using:
 
    mysql admin -u admin -pca1w7dUhnIgI --host <host>  -h<host> -P<port>
 
    Please remember to change the above password as soon as possible!
    MySQL user 'root' has no password but only allows local connections
-=====================================================================
-
+========================================================================
 
 ========================================================================
 
-   MySQL user: joomla and password: Me2rae1jiefi
+MySQL user: joomla and password: Me2rae1jiefi
 
 ========================================================================
 ```
