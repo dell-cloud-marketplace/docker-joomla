@@ -20,8 +20,8 @@ If you wish to create data volumes, which will survive a restart or recreation o
 #### A. Basic Usage
 Start your container with:
 
- - Ports 80, 443 (Apache Web Server) and 3306 (MySQL) exposed.
- - A named container (**joomla**).
+ - Ports 80, 443 (Apache Web Server) and 3306 (MySQL) exposed
+ - A named container (**joomla**)
 
 As follows:
 
@@ -120,7 +120,7 @@ Click on **Next** to proceed to the **Overview** tab. Select your preferred samp
 Next, click on **Site** or **Administrator** to access the newly-created Joomla site.
 
 ### Getting Started
-If you need assistance in customizing Joomla, the following links might be helpful:
+If you need assistance with customizing Joomla, the following links might be helpful:
 
 * [Joomla Documentation](http://docs.joomla.org/Main_Page)
 * [Getting Started with Joomla](http://docs.joomla.org/Getting_Started_with_Joomla!)
