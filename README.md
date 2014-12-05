@@ -38,6 +38,8 @@ Start your container with:
 * A predefined password for the MySQL **admin** user
 * Two data volumes (which will survive a restart or recreation of the container). The MySQL data is available in **/data/mysql** on the host. The PHP application files are available in **/app** on the host.
 
+As follows:
+
 ```no-highlight
 sudo docker run -d \
     -p 80:80 \
