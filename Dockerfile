@@ -1,7 +1,6 @@
 FROM dell/lamp-base:1.0
 MAINTAINER Dell Cloud Market Place <Cloud_Marketplace@dell.com>
 
-
 # Install packages
 RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install unzip
 
@@ -28,7 +27,5 @@ VOLUME ["/var/lib/mysql", "/var/www/html"]
 
 # Expose ports
 EXPOSE 80 3306 443
-
-RUN ls -lart /var/www/html/
 
 CMD ["/run.sh"]
