@@ -94,9 +94,9 @@ mysql -uadmin -pca1w7dUhnIgI -h127.0.0.1 -P3306
 ## Complete the Installation
 
 Open a web browser and navigate to either the public DNS or IP address of your instance. For example, if the IP address is 54.75.168.125, do:
-
-    https://54.75.168.125
-
+```no-highlight
+https://54.75.168.125
+```
 Your browser will warn you that the certificate is not trusted. If you are unclear about how to proceed, please consult your browser's documentation on how to accept the certificate.
 
 You should see Joomla configuration wizard set to the ```Configuration``` tab, select your language and supply the requested information for the following fields:
