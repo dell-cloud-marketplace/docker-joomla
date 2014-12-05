@@ -25,7 +25,6 @@ if [ ! "$(ls -A $APPLICATION_HOME)" ]; then
     # Update permissions
     chown -R www-data.www-data /var/www/html/
     chmod -R 775 /var/www/html/
-    a2enmod rewrite
 fi
 
 exec supervisord -n
