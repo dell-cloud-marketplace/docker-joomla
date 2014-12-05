@@ -105,15 +105,15 @@ You should see Joomla configuration wizard set to the **Configuration** tab. Sel
 * Admin Password
 * Site Offline
 
-Click on **Next** to proceed to the **Database Configuration** tab. Supply the MySQL information:
+Click on **Next** to proceed to the **Database Configuration** tab. Supply the following information:
 
 * Database Type: **MySQL**
 * Hostname: **localhost**
 * Username: **joomla**
 * Password: *The joomla password read from the logs.*
 * Database Name: **joomla**
-* Database prefix : **Choose a table prefix or accept the randomly generated value**
-* Old Database Process : **Backup/Remove**. You may want to keep any existing backup tables from former Joomla! installations
+* Database prefix : *Choose a table prefix or accept the randomly generated value*
+* Old Database Process : **Backup** or **Remove** (if you have a previous Joomla! installation)
 
 Click on **Next** to proceed to the **Overview** tab. Select your preferred sample data and review the configuration set. Once reviewed, you can complete the configuration by clicking on **Install**. On completion, you are requested to remove the installation folder by clicking **Remove installation folder** (this is a security feature and without this you are not able to proceed further).
 
