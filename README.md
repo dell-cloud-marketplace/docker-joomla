@@ -113,7 +113,7 @@ Click on **Next** to proceed to the **Database Configuration** tab. Supply the f
 * Password: *The joomla password read from the logs.*
 * Database Name: **joomla**
 * Database prefix : *Choose a table prefix or accept the randomly generated value*
-* Old Database Process : **Backup** or **Remove** (if you have a previous Joomla! installation)
+* Old Database Process : **Backup** or **Remove** (if you have a previous Joomla installation)
 
 Click on **Next** to proceed to the **Overview** tab. Select your preferred sample data and review the configuration set. Once reviewed, you can complete the configuration by clicking on **Install**. On completion, you are requested to remove the installation folder by clicking **Remove installation folder** (this is a security feature and without this you are not able to proceed further).
 
