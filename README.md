@@ -114,6 +114,8 @@ Click on "**Next**" to proceed to the next step which will take you to the ```Da
 * Username: **joomla**
 * Password: *The joomla password read from the logs.*
 * Database Name: **joomla**
+* Database prefix : **Choose a table prefix or use the randomly generated**
+* Old Database Process : **Backup/Remove**. You may want to keep any existing backup tables from former Joomla! installations
 
 Click on "**Next**" to proceed to the next step which will take you to the ```Overview``` tab. Select your preferred sample data and review the configuration set. Once reviewed you can complete the configuration by clicking on ‘**Install**’. On completion of installation you are requested to remove the installation folder by clicking “**Remove installation folder**”, this is a security feature and without this you are not able to proceed further.
 
