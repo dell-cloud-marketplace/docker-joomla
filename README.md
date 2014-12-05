@@ -77,7 +77,7 @@ MySQL user: joomla and password: Me2rae1jiefi
 ========================================================================
 ```
 
-Make a secure note of the passwords added to the users. You can use it later, to connect to MySQL (e.g. to backup data):
+Make a secure note of the passwords:
 
 * The admin user password (in this case **ca1w7dUhnIgI**)
 * The joomla user password (in this case **Me2rae1jiefi**)
