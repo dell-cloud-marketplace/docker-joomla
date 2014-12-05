@@ -15,21 +15,28 @@ PHP        | see [docker-lamp-base](https://github.com/dell-cloud-marketplace/do
 
 ## Usage
 
-### Start the Container
-Start the container, as follows:
+### 1. Start the Container
+If you wish to create data volumes, which will survive a restart or recreation of the container, please follow the instructions in [Advanced Usage](#advanced-usage).
 
+#### A. Basic Usage
+Start your container with:
 
-    sudo docker run -d -p 80:80 -p 443:443 -p 3306:3306 --name joomla dell/joomla
+ - Ports 80, 443 (Apache Web Server) and 3306 (MySQL) exposed.
+ - A named container (**joomla**).
 
+As follows:
 
-### Advance Usage
+```no-highlight
+sudo docker run -d -p 80:80 -p 443:443 -p 3306:3306 --name joomla dell/joomla
+```
 
+<a name="advanced-usage"></a>
+#### B. Advanced Usage
 Start your container with:
 
 * Ports 80, 443 (Apache Web Server) and 3306 (MySQL) exposed
 * A named container (**joomla**)
 * A predefined password for the MySQL **admin** user
-* A predefined hostname for the joomla container.
 * Two data volumes (which will survive a restart or recreation of the container). The MySQL data is available in **/data/mysql** on the host. The PHP application files are available in **/app** on the host.
 
 ```no-highlight
@@ -45,12 +52,14 @@ sudo docker run -d \
 ```
 
 
-### Check the Log Files
+### 2. Check the Log Files
 
 If you haven't defined a MySQL password, the container will generate a random one. Check the logs for the password by running: 
 
-     sudo docker logs joomla
-     
+```no-highlight
+sudo docker logs joomla
+```
+
 You will see output like the following:
 
 ```no-highlight
@@ -85,9 +94,9 @@ mysql -uadmin -pca1w7dUhnIgI -h127.0.0.1 -P3306
 ## Complete the Installation
 
 Open a web browser and navigate to either the public DNS or IP address of your instance. For example, if the IP address is 54.75.168.125, do:
-
-    https://54.75.168.125
-
+```no-highlight
+https://54.75.168.125
+```
 Your browser will warn you that the certificate is not trusted. If you are unclear about how to proceed, please consult your browser's documentation on how to accept the certificate.
 
 You should see Joomla configuration wizard set to the ```Configuration``` tab, select your language and supply the requested information for the following fields:
@@ -105,6 +114,8 @@ Click on "**Next**" to proceed to the next step which will take you to the ```Da
 * Username: **joomla**
 * Password: *The joomla password read from the logs.*
 * Database Name: **joomla**
+* Database prefix : **Choose a table prefix or use the randomly generated**
+* Old Database Process : **Backup/Remove**. You may want to keep any existing backup tables from former Joomla! installations
 
 Click on "**Next**" to proceed to the next step which will take you to the ```Overview``` tab. Select your preferred sample data and review the configuration set. Once reviewed you can complete the configuration by clicking on ‘**Install**’. On completion of installation you are requested to remove the installation folder by clicking “**Remove installation folder**”, this is a security feature and without this you are not able to proceed further.
 
