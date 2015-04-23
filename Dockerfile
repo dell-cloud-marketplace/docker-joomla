@@ -1,12 +1,18 @@
-FROM dell/lamp-base:1.0
+FROM dell/lamp-base:1.1
 MAINTAINER Dell Cloud Market Place <Cloud_Marketplace@dell.com>
 
+# Update existing packages.
+RUN apt-get update 
+
 # Install packages
-RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install unzip
+RUN DEBIAN_FRONTEND=noninteractive \
+    apt-get -y install \
+        unzip
+RUN apt-get -y clean
 
 # Download Joomla
 ADD https://github.com/joomla/joomla-cms/releases/\
-download/3.3.6/Joomla_3.3.6-Stable-Full_Package.zip /tmp/
+download/3.4.1/Joomla_3.4.1-Stable-Full_Package.zip /tmp/
 
 # Remove previous files
 RUN rm -rf /var/www/html/*
@@ -14,12 +20,12 @@ RUN rm -rf /var/www/html/*
 # Extract Joomla
 RUN \
   cd /tmp && ls -la && \
-  unzip -d /tmp/joomla/ Joomla_3.3.6-Stable-Full_Package.zip && \
-  rm Joomla_3.3.6-Stable-Full_Package.zip
+  unzip -d /tmp/joomla/ Joomla_3.4.1-Stable-Full_Package.zip && \
+  rm Joomla_3.4.1-Stable-Full_Package.zip
 
 # Add scripts and make them executable.
-ADD create_mysql_users.sh /create_mysql_users.sh
-ADD run.sh /run.sh
+COPY create_mysql_users.sh /create_mysql_users.sh
+COPY run.sh /run.sh
 RUN chmod +x /*.sh
 
 # Add volumes for MySQL and application.

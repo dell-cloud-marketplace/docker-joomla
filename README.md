@@ -6,7 +6,7 @@ The stack comprises the following components (some are obtained through [dell/la
 
 Name       | Version                 | Description
 -----------|-------------------------|------------------------------
-Joomla	    | 3.3.6                   | Content Management System
+Joomla	    | 3.4.1                   | Content Management System
 Ubuntu     | see [docker-lamp-base](https://github.com/dell-cloud-marketplace/docker-lamp-base) | Operating system
 MySQL      | see [docker-lamp-base](https://github.com/dell-cloud-marketplace/docker-lamp-base) | Database
 Apache     | see [docker-lamp-base](https://github.com/dell-cloud-marketplace/docker-lamp-base) | Web server
