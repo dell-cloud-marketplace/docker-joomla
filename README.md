@@ -129,5 +129,14 @@ If you need assistance with customizing Joomla, the following links might be hel
 * [Joomla Extensions Directory](http://extensions.joomla.org/)
 * [Joomla API](http://api.joomla.org/)
 
+## Reference
+
+### Environmental Variables
+
+Variable    | Default  | Description
+------------|----------|-----------------------------------
+MYSQL_PASS  | *random* | Password for MySQL user **admin**
+JOOMLA_PASS | *random* | Password for MySQL user **joomla**
+
 ### Image Details
 Pre-built Image | [https://registry.hub.docker.com/u/dell/joomla](https://registry.hub.docker.com/u/dell/joomla)
