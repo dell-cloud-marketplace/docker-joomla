@@ -48,6 +48,7 @@ sudo docker run -d \
     -v /app:/var/www/html \
     -v /data/mysql:/var/lib/mysql \
     -e MYSQL_PASS="password"  \
+    -e JOOMLA_PASS="password"  \
     --name joomla \
     dell/joomla
 ```
