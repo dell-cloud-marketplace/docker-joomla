@@ -48,6 +48,7 @@ sudo docker run -d \
     -v /app:/var/www/html \
     -v /data/mysql:/var/lib/mysql \
     -e MYSQL_PASS="password"  \
+    -e JOOMLA_PASS="password"  \
     --name joomla \
     dell/joomla
 ```
@@ -128,6 +129,15 @@ If you need assistance with customizing Joomla, the following links might be hel
 * [Getting Started with Joomla](http://docs.joomla.org/Getting_Started_with_Joomla!)
 * [Joomla Extensions Directory](http://extensions.joomla.org/)
 * [Joomla API](http://api.joomla.org/)
+
+## Reference
+
+### Environmental Variables
+
+Variable    | Default  | Description
+------------|----------|-----------------------------------
+MYSQL_PASS  | *random* | Password for MySQL user **admin**
+JOOMLA_PASS | *random* | Password for MySQL user **joomla**
 
 ### Image Details
 Pre-built Image | [https://registry.hub.docker.com/u/dell/joomla](https://registry.hub.docker.com/u/dell/joomla)

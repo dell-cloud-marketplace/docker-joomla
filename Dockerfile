@@ -1,4 +1,4 @@
-FROM dell/lamp-base:1.1
+FROM dell/lamp-base:1.2
 MAINTAINER Dell Cloud Market Place <Cloud_Marketplace@dell.com>
 
 # Update existing packages.
@@ -30,6 +30,9 @@ RUN chmod +x /*.sh
 
 # Add volumes for MySQL and application.
 VOLUME ["/var/lib/mysql", "/var/www/html"]
+
+# Environmental variables.
+ENV JOOMLA_PASS ""
 
 # Expose ports
 EXPOSE 80 3306 443

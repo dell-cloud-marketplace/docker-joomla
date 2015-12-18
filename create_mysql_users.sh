@@ -11,9 +11,6 @@ while [[ RET -ne 0 ]]; do
     RET=$?
 done
 
-
-#/create_db.sh joomladb
-
 # Create Admin user
 PASS=${MYSQL_PASS:-$(pwgen -s 12 1)}
 _word=$( [ ${MYSQL_PASS} ] && echo "preset" || echo "random" )
@@ -34,20 +31,19 @@ echo "Please remember to change the above password as soon as possible!"
 echo "MySQL user 'root' has no password but only allows local connections"
 echo "========================================================================"
 
+# If not supplied, generate a random password for the joomla MySQL user.
+JOOMLA_PASSWORD=${JOOMLA_PASS:-$(pwgen -s 12 1)}
 
 # Create Joomla user
 echo
-echo "=> Creating MySQL joomla user with random password"
+echo "=> Creating MySQL joomla user"
 echo
 
-# Generate a random password for the joomla MySQL user.
-JOOMLA_PASSWORD=`pwgen -c -n -1 12`
 echo "========================================================================"
 echo
-echo "MySQL user: joomla and password:" $JOOMLA_PASSWORD
+echo "MySQL joomla user password:" $JOOMLA_PASSWORD
 echo
 echo "========================================================================"
-
 
 # Create Joomla database
 echo "=> Creating database joomla in MySQL"
@@ -55,6 +51,5 @@ echo "=> Creating database joomla in MySQL"
 mysql -uroot -e "CREATE DATABASE joomla; \
       GRANT ALL PRIVILEGES ON joomla.* TO 'joomla'@'localhost' \
       IDENTIFIED BY '$JOOMLA_PASSWORD'; FLUSH PRIVILEGES;"
-
 
 mysqladmin -uroot shutdown
